@@ -10,7 +10,7 @@ app.use(express.urlencoded({ extended: false }))
 
 
 app.use('/', require('./routes/index'))
-
+app.use('/register', require('./routes/register'))
 
 
 app.listen(3000, () => console.log('Server UP & RUNNIN on 3K'));

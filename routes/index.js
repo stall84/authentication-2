@@ -3,7 +3,9 @@ const router = express.Router();
 
 
 router.get('/', (req,res) => {
-    res.render('index')
+    res.render('index', {
+        name: "Michael Badassmon The First"
+    })
 })
 
 
